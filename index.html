@@ -1,0 +1,367 @@
+ <!DOCTYPE html>
+    <head>
+    <meta charset="UTF-8">
+        <title>A&T | E-commerce Website Design</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript">
+            function startTime()
+            {
+            var today=new Date();
+            var h=today.getHours();
+            var m=today.getMinutes();
+            var s=today.getSeconds();
+                // add a zero in front of numbers<10
+            m=checkTime(m);
+            s=checkTime(s);
+            document.getElementById('txt').innerHTML="Өнөөдөрийн цаг "+h+":"+m+":"+s;
+            t=setTimeout('startTime()',500);
+            }
+            function checkTime(i)
+            {
+            if (i<10)
+            {
+            i="0" + i;
+            }
+            return i;
+            }
+            </script>
+    </head>
+    <body  onload="startTime()">
+      <div class="header">
+       <div class="container">
+        <div class="navbar">
+           <div class="logo">
+                <img src="images/log.png" width="125px" >
+           </div>
+           <div id="txt"></div>
+           <form class="example" action="action_page.php">
+                <input type="text" placeholder="Хайлт.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+           </form>
+            <nav>
+                <ul>
+                    <li><a href="">НҮҮР</a></li>
+                    <li><a href="">БҮТЭЭГДЭХҮҮН</a></li>
+                    <li><a href="about.html">ТУХАЙ</a></li>
+                    <li><a href="">ХОЛБОО БАРИХ</a></li>
+                    <li><a href="">ДАНС</a></li>
+                </ul>
+           </nav>
+           <img src="images/l/cart.png" width="30px" height="30px">
+        </div>
+            <div class="alert">
+                 <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                                        Онлайн дэлгүүр засвартай байна!!!     Утас: +976 89351227          
+            </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Өгсөнд нь өлзий болог<br>Авсанд нь ач болог ...</h1>
+                <!--<p>American size can be selected according to the reference size table, Currently only available in white, quality assurance, quality assured, ...</p>-->
+                <img src="images/l/images.png" alt="">
+                <!--<a href="" class="btn">Explore Now &#8594;</a>-->
+            </div>
+            <div class="col-2">
+                <img src="images/Lando.png" alt="">
+            </div>
+        </div>
+       </div>
+      </div>
+      <!---------------- featred categories -------------------->
+      <div class="categories">
+       <div class="small-container">
+        <h2 class="title">ТАНЫ ХҮССЭН БАРАА БҮТЭЭГДЭХҮҮН ЭНД</h2>
+        <div class="row">
+            <div class="col-3">
+                <img src="images/l/hat.jpg" alt="i">
+                <h3>МАЛГАЙ</h3>
+            </div>
+            <div class="col-3">
+                <img src="images/l/cloth.jpg" alt="i">
+                <h3>ХУВЦАС</h3>
+            </div>
+            <div class="col-3">
+                <img src="images/l/shoe.png" alt="i">
+                <h3>ГУТАЛ</h3>
+            </div>
+            <div class="col-3">
+                <img src="images/l/watch.gif" alt="i">
+                <h3>ЦАГ</h3>
+            </div>
+        </div>
+       </div> 
+      </div>
+     
+
+      <!--hat products-->
+      <div class="small-container">
+        <h2 class="title">МАЛГАЙ</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/baraa/hat/ble.jpg">
+                <h4>Цагаан даавуун даашинз</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>    
+                <p>30.000₮</p>
+            </div>
+            <div class="col-4">
+                <img src="images/baraa/hat/byron.jpg">
+                <h4>Хар даавуун фудволка /эрэгтэй/</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>25.000₮</p>
+            </div>
+            <div class="col-4">
+                <img src="images/baraa/hat/havana.jpg">
+                <h4>Хар цамц /эрэгтэй/</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>35.000₮</p>
+            </div>
+            <div class="col-4">
+                <img src="images/baraa/hat/proper.jpg">
+                <h4>Хүрэн даавуун цамц /эрэгтэй/</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>35.000₮</p>
+            </div>
+        </div>
+      </div>
+
+ <!---------------- featred products -------------------->
+      <div class="small-container">
+        <h2 class="title">БҮТЭЭГДЭХҮҮН</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/baraa/em.png">
+                <h4>Цагаан даавуун даашинз</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>    
+                <p>30.000₮</p>
+            </div>
+            <div class="col-4">
+                <img src="images/baraa/s.jpg">
+                <h4>Хар даавуун фудволка /эрэгтэй/</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>25.000₮</p>
+            </div>
+            <div class="col-4">
+                <img src="images/baraa/ss.jpg">
+                <h4>Хар цамц /эрэгтэй/</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>35.000₮</p>
+            </div>
+            <div class="col-4">
+                <img src="images/baraa/a.jpg">
+                <h4>Хүрэн даавуун цамц /эрэгтэй/</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>35.000₮</p>
+            </div>
+        </div>
+      </div>
+
+<!--Shoes-->
+<div class="small-container">
+        <h2 class="title">ГУТАЛ</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/baraa/shoes/a.jfif">
+                <h4>Цагаан даавуун даашинз</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>    
+                <p>30.000₮</p>
+            </div>
+            <div class="col-4">
+                <img src="images/baraa/shoes/images.jfif">
+                <h4>Хар даавуун фудволка /эрэгтэй/</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>25.000₮</p>
+            </div>
+            <div class="col-4">
+                <img src="images/baraa/shoes/olim.jpg">
+                <h4>Хар цамц /эрэгтэй/</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>35.000₮</p>
+            </div>
+            <div class="col-4">
+                <img src="images/baraa/shoes/shoes.jfif">
+                <h4>Хүрэн даавуун цамц /эрэгтэй/</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>35.000₮</p>
+            </div>
+        </div>
+      </div>
+
+<!--offer-->
+<h2 class="title">ЦАГ</h2>
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/baraa/watch/1.jpg" >
+            </div>
+            <div class="col-2">
+                <p>A&T store | Smart Technology</p>
+                <h1>Xiaomi Redmi Smart Band Price in Mongolia</h1>
+                <small>Xiaomi Redmi Smart Band Price in Mongolia and Full Specifications. Currently, The Xiaomi Redmi Smart Band price in Mongolia starts from MNT 61026 (Approx). Xiaomi Redmi Smart Band official / unofficial full specs, features, reviews, MN Price, Release Date in Mongolia. Xiaomi makes an announcement in Available. Released September, 2019 . AMOLED On-cell capacitive touchscreen, 24bit colors depth , 1.08 inches display, Requirement Android 4.4 , 16 MB Storage & 512 KB Ram, No. Primary camera No. secondary camera feature is No.</small>
+                <a href="" class="btn">Захиалах &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>     
+
+<!--testimonial-->
+<div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+              <i class="fa fa-quote-left"></i>
+                <p>sadfa</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <img src="images/unnamed.jpg">
+                <a href=""><h3>Түмээ Х.</h3></a>
+
+            </div>    
+        </div>
+    </div>
+</div>
+<!--timeline-->
+      <div class="timeline">
+        <div class="con left">
+            <div class="content">
+                <h2>2021</h2>
+                 <p>Lorem ipsum..</p>
+            </div>
+        </div>
+        <div class="con right">
+             <div class="content">
+                <h2>2020</h2>
+                 <p>Lorem ipsum..</p>
+            </div>
+        </div>
+        <div class="con left">
+             <div class="content">
+                <h2>2019</h2>
+                 <p>Lorem ipsum..</p>
+            </div>
+        </div
+       </div>
+
+
+<!--alert script-->
+       <style>
+.alert {
+  opacity: 1;
+  transition: opacity 0.6s; /* 600ms to fade out */
+}
+</style>
+
+<script>
+// Get all elements with class="closebtn"
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+// Loop through all close buttons
+for (i = 0; i < close.length; i++) {
+  // When someone clicks on a close button
+  close[i].onclick = function(){
+
+    // Get the parent of <span class="closebtn"> (<div class="alert">)
+    var div = this.parentElement;
+
+    // Set the opacity of div to 0 (transparent)
+    div.style.opacity = "0";
+
+    // Hide the div after 600ms (the same amount of milliseconds it takes to fade out)
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+</script>
+    </body>
+ </html>
